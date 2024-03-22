@@ -57,8 +57,71 @@
           <div class="row card-box align-left">
             <div class="item features-without-image col-12">
               <div class="item-wrapper">
-                <h4 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5"><strong>Coming Soon!</strong></h4>
-                <p class="mbr-text mbr-fonts-style display-7">Level designer, character controller&nbsp;<br></p>
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5"><strong>Design Work</strong></h4>
+                <p class="mbr-text mbr-fonts-style display-7"><br>
+                  Above are our initial platforming challenge ideas involving the web swinging mechanics. 
+                  We used this as a basis to think of additional platforming challenges which we wanted to incorporate into our greybox design.
+                </p>
+                <p class="mbr-text mbr-fonts-style display-7"><br>
+                  In this challenge, the two characters would sit in webs on either side of a falling object to launch it back the way it came.
+                </p>
+                <p class="mbr-text mbr-fonts-style display-7"><br>
+                  In the top challenge, the players could launch the spider up vertically by jumping off a ledge with the moth in a spider web above it.
+                </p>
+                <p class="mbr-text mbr-fonts-style display-7"><br>
+                  In the bottom challenge, the players could launch themselves horizontally by moving a block into a hole, preventing it from moving and allowing the players to use it as a fixed point to launch themselves from.
+                </p>
+
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5"><strong>Greybox</strong></h4>
+                <h5 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5"><strong>Design Process</strong></h5>
+                <p class="mbr-text mbr-fonts-style display-7"><br>
+                  The team worked together to create a level design that would utilize the rope mechanic effectively, be fun for the player and utilize the theming of the level. 
+                  We started with a rough outline of a basement and then looked at it through the lens of the mechanics to create our finalized map. While the first map was focused on having a point A and point B 
+                  within the confines of a basement map, when designing the updated version the team had a focus on creating distinct regions to explore different mechanics. We also added more verticality to the 
+                  level design so the path feels more three dimensional. This version entices the player to explore the area to find the best possible route to escape while also requiring them to utilize the rope 
+                  swinging mechanic as much as possible. 
+                </p>
+
+                <h5 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5"><strong>Finalized Greybox</strong></h5>
+                <p class="mbr-text mbr-fonts-style display-7"><br>
+                  After the main layout of the map was finalized, the art team began the process of greyboxing. Starting with the base floor and wall shapes, we modeled all of the larger/most important set pieces of 
+                  the level, including larger bookshelves, benches, bins and windows. Each asset was modeled to be human size, yet not too massive for exploration on the player (bug) scale. After all main greybox 
+                  assets were modeled, each asset was unwrapped, given a basic material and brought into engine for staging. The screenshots below show some views from both Maya and Unreal (currently just maya).
+                </p>
+
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5"><strong>Art Progress</strong></h4>
+                <p class="mbr-text mbr-fonts-style display-7"><br>
+                  We began creating smaller staging pieces like cans and jars to fill out the space. We also looked at assets from the Unreal store to save ourselves some time. 
+                  Lastly, we began creating the model for the player spider character.
+                </p>
+
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5"><strong>The Unreal Pains of Unreal Engine</strong></h4>
+                <p class="mbr-text mbr-fonts-style display-7"><br>
+                  When we started, Unreal version 5.3.2 wouldn't work on anyone's computers, neither lab nor personal. After a long debugging process with help from the professors, we were able to get version 5.3 
+                  running on our own computers, but it still wasn't fixed in lab. Because of this, we switched our project to version 5.2 so that we could work with minimal interruption. We also set up a Github 
+                  repository and established our own branches to work on our own sections.
+                </p>
+
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5"><strong>Our Test Level</strong></h4>
+                <p class="mbr-text mbr-fonts-style display-7"><br>
+                  This was a first blockout which allowed the tech team to share their visions with the art team, which facilitated an easier combined idea. By creating a basic blockout in Unreal, it was easy to 
+                  communicate both the scale and the general level design we were going for. This was an important asset to include in the final level map. The test level proved to be helpful for troubleshooting 
+                  our engine issues, as the art team was first unable to open the blockout on the lab machines. 
+                </p>
+
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5"><strong>Ropes!</strong></h4>
+                <p class="mbr-text mbr-fonts-style display-7"><br>
+                  One of our main investigations this week was into UE5 ropes. After making a very basic test character controller, we investigated the CableComponent class built into Unreal. The CableComponent 
+                  deals with rope rendering and can connect two points automatically. It also has collisions, but they aren't by default quite as robust as we may like them to be. The issue with CableComponent is 
+                  that it lacks true rope physics. Though the cable does sag down with gravity, if the endpoints of the rope move, the rope simply lengthens or retracts to match. 
+                </p>
+                <p class="mbr-text mbr-fonts-style display-7"><br>
+                  We've planned several ideas to potentially address this. <a href="https://forums.unrealengine.com/t/share-blueprint-only-physics-rope-system/155943">Some users</a> recommend skeletal meshes rather 
+                  than CableComponents, which we will begin to investigate this weekend. Alternatively, we do actually want the rope to stretch a bit in our game, so the CableComponent may end up working out of the 
+                  box for our purposes. We would simply need to detect how far it has stretched and apply visual cues and forces as necessary. The plausibility of this approach will depend on how easily accessible 
+                  the internal variables of the CableComponent are within C++ and Blueprints code as well as the modifiability of the CableComponent class. This area of investigation will be one of the tech team's 
+                  top priorities going into next week.
+                </p>
               </div>
             </div>
           </div>
