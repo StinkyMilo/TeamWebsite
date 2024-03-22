@@ -58,13 +58,17 @@
             <div class="item features-without-image col-12">
               <div class="item-wrapper">
                 <h4 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5"><strong>Design Work</strong></h4>
+                <img src="assets/images/blogweek1/ex1.png" style="max-width:30%;">
+                <img src="assets/images/blogweek1/ex2.png" style="max-width:30%;">
                 <p class="mbr-text mbr-fonts-style display-7"><br>
                   Above are our initial platforming challenge ideas involving the web swinging mechanics. 
                   We used this as a basis to think of additional platforming challenges which we wanted to incorporate into our greybox design.
                 </p>
+                <img src="assets/images/blogweek1/ex3.png" style="max-width:30%;">
                 <p class="mbr-text mbr-fonts-style display-7"><br>
                   In this challenge, the two characters would sit in webs on either side of a falling object to launch it back the way it came.
                 </p>
+                <img src="assets/images/blogweek1/ex4.png" style="max-width: 30%;">
                 <p class="mbr-text mbr-fonts-style display-7"><br>
                   In the top challenge, the players could launch the spider up vertically by jumping off a ledge with the moth in a spider web above it.
                 </p>
@@ -73,6 +77,11 @@
                 </p>
 
                 <h4 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5"><strong>Greybox</strong></h4>
+                <div style="display:flex; flex-direction: row; align-items: center; justify-content: center;">
+                  <img src="assets/images/blogweek1/gb1.png" style="max-width: 30%;">
+                  <img src="assets/images/blogweek1/gb2.png" style="max-width: 30%;">
+                  <img src="assets/images/blogweek1/gb3.png" style="max-width: 30%;">
+                </div>
                 <h5 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5"><strong>Design Process</strong></h5>
                 <p class="mbr-text mbr-fonts-style display-7"><br>
                   The team worked together to create a level design that would utilize the rope mechanic effectively, be fun for the player and utilize the theming of the level. 
@@ -88,7 +97,24 @@
                   the level, including larger bookshelves, benches, bins and windows. Each asset was modeled to be human size, yet not too massive for exploration on the player (bug) scale. After all main greybox 
                   assets were modeled, each asset was unwrapped, given a basic material and brought into engine for staging. The screenshots below show some views from both Maya and Unreal (currently just maya).
                 </p>
-
+                <div style="display:flex; flex-direction: row; align-items: center; justify-content: center;">
+                  <img src="assets/images/blogweek1/gb4.png" style="max-width: 30%;">
+                  <img src="assets/images/blogweek1/gb5.png" style="max-width: 30%;">
+                </div>
+                <div style="display:flex; flex-direction: row; align-items: center; justify-content: center;">
+                  <img src="assets/images/blogweek1/gb6.png" style="max-width: 30%;">
+                  <img src="assets/images/blogweek1/gb7.png" style="max-width: 30%;">
+                </div>
+                <div style="display:flex; flex-direction: row; align-items: center; justify-content: center;">
+                  <img src="assets/images/blogweek1/gb8.png" style="max-width: 50%;">
+                </div>
+                <div style="display:flex; flex-direction: row; align-items: center; justify-content: center;">
+                  <img src="assets/images/blogweek1/gb9.png" style="max-width: 30%;">
+                  <img src="assets/images/blogweek1/gb10.png" style="max-width: 30%;">
+                </div>
+                <div style="display:flex; flex-direction: row; align-items: center; justify-content: center;">
+                  <video src="assets/images/blogweek1/gbfly.mp4" style="max-width:75%;" controls></video>
+                </div>
                 <h4 class="mbr-section-subtitle mbr-fonts-style mb-3 display-5"><strong>Art Progress</strong></h4>
                 <p class="mbr-text mbr-fonts-style display-7"><br>
                   We began creating smaller staging pieces like cans and jars to fill out the space. We also looked at assets from the Unreal store to save ourselves some time. 
@@ -115,6 +141,9 @@
                   deals with rope rendering and can connect two points automatically. It also has collisions, but they aren't by default quite as robust as we may like them to be. The issue with CableComponent is 
                   that it lacks true rope physics. Though the cable does sag down with gravity, if the endpoints of the rope move, the rope simply lengthens or retracts to match. 
                 </p>
+                <div style="display:flex; flex-direction: row; align-items: center; justify-content: center;">
+                  <video src="assets/images/blogweek1/ropeVideo.mp4" style="max-width:75%;" controls></video>
+                </div>
                 <p class="mbr-text mbr-fonts-style display-7"><br>
                   We've planned several ideas to potentially address this. <a href="https://forums.unrealengine.com/t/share-blueprint-only-physics-rope-system/155943">Some users</a> recommend skeletal meshes rather 
                   than CableComponents, which we will begin to investigate this weekend. Alternatively, we do actually want the rope to stretch a bit in our game, so the CableComponent may end up working out of the 
